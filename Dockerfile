@@ -22,7 +22,7 @@ RUN wget https://downloads.lightbend.com/scala/2.12.13/scala-2.12.13.deb && \
 
 #NODE & NPM
 RUN curl -fsSL https://deb.nodesource.com/setup_current.x | bash - && \
-	apt install -y nodejs && \
+	apt update && apt install -y nodejs && \
 	npm install npm@latest -g
 	
 #SBT 
